@@ -1,4 +1,5 @@
 #include "epi_sort.h"
+#include "linkList.h"
 
 int main() {
 	epi_sort test;
@@ -11,5 +12,15 @@ int main() {
 	test.bubbleSort(arr3);
 	test.shortBubbleSort(arr4);
 	//test.quickSort(arr);
+	linkList list;
+	int i = 0;
+	while (i < 10) {
+		list.addNode(i);
+		i++;
+	}
+	list.addNodeAt(4, 20);
+	list.printLinkList();
+	list.deleteNode(5);
+	list.printLinkList();
 	return 0;
 }

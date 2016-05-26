@@ -21,9 +21,15 @@
     <ClCompile Include="epi_sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="linkList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="epi_sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="linkList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
