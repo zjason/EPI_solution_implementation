@@ -21,5 +21,9 @@ public:
 	void deleteNode(int num);
 	void deleteNodeAt(int position);
 	void printLinkList();
+
+	// interview question
+	// remove duplicates from link list
+	void removeDup();
 };
 
