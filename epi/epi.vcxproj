@@ -147,11 +147,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="epi_sort.cpp" />
+    <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="linkList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="epi_sort.h" />
+    <ClInclude Include="leetcode.h" />
     <ClInclude Include="linkList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

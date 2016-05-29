@@ -13,6 +13,7 @@ private:
 	node *curr;
 	node *temp;
 
+
 public:
 	linkList();
 	~linkList();
@@ -21,9 +22,13 @@ public:
 	void deleteNode(int num);
 	void deleteNodeAt(int position);
 	void printLinkList();
+	
 
 	// interview question
 	// remove duplicates from link list
 	void removeDup();
+	bool hasCycle(node *head);
+	void oddEvenList(node* head);
+	
 };
 

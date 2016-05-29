@@ -1,4 +1,24 @@
 ﻿  main.cpp
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\main.cpp(42): error C2039: 'adddigits': is not a member of 'leetcode'
+  c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.h(9): note: see declaration of 'leetcode'
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\main.cpp(43): error C2374: 'test': redefinition; multiple initialization
+  c:\users\jason\documents\visual studio 2015\projects\epi\epi\main.cpp(41): note: see declaration of 'test'
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\main.cpp(45): error C2039: 'converttotitle': is not a member of 'leetcode'
+  c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.h(9): note: see declaration of 'leetcode'
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\main.cpp(46): error C2039: 'titletonumber': is not a member of 'leetcode'
+  c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.h(9): note: see declaration of 'leetcode'
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\main.cpp(47): error C2039: 'hammingweight': is not a member of 'leetcode'
+  c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.h(9): note: see declaration of 'leetcode'
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\main.cpp(48): error C2039: 'removeelement': is not a member of 'leetcode'
+  c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.h(9): note: see declaration of 'leetcode'
   linkList.cpp
+  leetcode.cpp
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(45): warning C4018: '<': signed/unsigned mismatch
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(60): warning C4018: '<': signed/unsigned mismatch
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(65): warning C4018: '<': signed/unsigned mismatch
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(98): warning C4018: '<': signed/unsigned mismatch
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(101): warning C4018: '<': signed/unsigned mismatch
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(106): warning C4018: '<': signed/unsigned mismatch
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(131): warning C4018: '<': signed/unsigned mismatch
+c:\users\jason\documents\visual studio 2015\projects\epi\epi\leetcode.cpp(159): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
-  epi.vcxproj -> C:\Users\Jason\Documents\Visual Studio 2015\Projects\epi\Debug\epi.exe

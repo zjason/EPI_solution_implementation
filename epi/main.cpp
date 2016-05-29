@@ -1,8 +1,10 @@
 #include "epi_sort.h"
 #include "linkList.h"
+#include "leetcode.h"
 
 int main() {
 	// test case for sort algorithms
+	/*
 	epi_sort test;
 	int arr1[10] = { 54, 26, 93, 17, 77, 31, 44, 55, 20, 7 };
 	int arr2[10] = { 54, 26, 93, 17, 77, 31, 44, 55, 20, 7 };
@@ -33,5 +35,16 @@ int main() {
 	list.printLinkList();
 	list.removeDup();
 	list.printLinkList();
+*/
+	// leetcode solution
+	/*leetcode leet;
+	vector<int> test1 = { 3,3 };
+	leet.addDigits(0);
+	vector<int> test2 = { 1,2 };
+	leet.rotate(test1, 4);
+	leet.convertToTitle(28);
+	leet.titleToNumber("aa");
+	leet.hammingWeight(1);
+	leet.removeElement(test2, 3);*/
 	return 0;
 }

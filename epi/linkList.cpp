@@ -135,4 +135,49 @@ void linkList::removeDup()
 	}
 }
 
+// check if the link list has cycle or not
+// walker will move through this link list one by one
+// runner will mvoe through this link list two at a time
+// if this linked list has cycle, then runner will catch up walker sooner or later
+bool linkList::hasCycle(node * head)
+{
+	node* runner;
+	node* walker;
+	runner = head;
+	walker = head;
+	if (head != nullptr) {
+		while (runner->next != nullptr && runner->next->next != nullptr) {
+			walker = walker->next;
+			runner = runner->next->next;
+			if (runner == walker) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+// space complexity is O(1), time complexity is O(n)
+// create three pointer that odd point to odd node; even point to even node
+// evenhead point to the head of even list
+// after go through the linked list, odd sublist and even sublist are created
+// then link the last node in odd sublist to evenhead
+void linkList::oddEvenList(node * head)
+{
+	if (head != nullptr) {
+		node *odd, *even, *evenhead;
+		odd = head;
+		even = head->next;
+		evenhead = head->next;
+		while (odd->next != nullptr && even->next != nullptr) {
+			odd->next = even->next;
+			odd = odd->next;
+			even->next = odd->next;
+			even = even->next;
+		}
+		odd->next = evenhead;
+	}
+}
+
+
 
