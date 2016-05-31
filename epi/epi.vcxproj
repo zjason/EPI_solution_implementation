@@ -149,12 +149,14 @@
     <ClCompile Include="epi_sort.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="linkList.cpp" />
+    <ClCompile Include="LRUCache.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="epi_sort.h" />
     <ClInclude Include="leetcode.h" />
     <ClInclude Include="linkList.h" />
+    <ClInclude Include="LRUCache.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

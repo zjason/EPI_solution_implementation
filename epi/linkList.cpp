@@ -77,13 +77,21 @@ void linkList::deleteNode(int delData)
 }
 
 // delete data from certain position
+// edge case: index = 0, need to point head to new head
 void linkList::deleteNodeAt(int position)
 {
 	node* d = nullptr;
 	temp = head;
 	curr = head;
-	int curr_pos = 1;
+	int curr_pos = 0;
 	if (head != nullptr) {
+		if (position == 0) {
+			d = curr;
+			curr = curr->next;
+			delete d;
+			head = curr;
+			return;
+		}
 		while (curr_pos < position && curr != nullptr) {
 			temp = curr;
 			curr = curr->next;
@@ -179,5 +187,81 @@ void linkList::oddEvenList(node * head)
 	}
 }
 
+void linkList::swapPairs(node * head)
+{
+	node *curr, *temp;
+	node *dummy = new node();
+	temp = head;
+	curr = head;
+	bool change = true;
+	if (head != nullptr) {
+		if (head->next == nullptr) {
+			return ;
+		}
+		if (head->next->next == nullptr) {
+			curr = curr->next;
+			temp->next = curr->next;
+			curr->next = temp;
+			head = curr;
+			return ;
+		}
+		head = head->next;
+		curr = curr->next;
+		while (curr != nullptr) {
+			if (change == true) {
+				temp->next = curr->next;
+				curr->next = temp;
+				dummy = temp;
+				change = false;
+			}
+			else {
+				if (temp->next != nullptr && temp->next->next != nullptr) {
+					temp = temp->next;
+					curr = temp->next;
+					dummy->next = curr;
+					change = true;
+				}
+				else {
+					break;
+				}
+			}
+		}
+	}
+}
 
+void linkList::addTwoNumbers(node * l1, node * l2)
+{
 
+}
+
+// reverse linked list by iterator through the whole list
+// edge case: list is empty
+// edge case: list only contain one item
+void linkList::reverseList()
+{
+	cout << "befor reverse:" << endl;
+	printLinkList();
+	node *curr, *temp;
+	curr = head;
+	temp = head;
+
+	if (head != nullptr) {
+		if (curr->next == nullptr) {
+			return;
+		}
+
+		curr = curr->next;
+		temp->next = nullptr;
+		while (curr->next != nullptr) {
+			temp = curr;
+			curr = curr->next;
+			temp->next = head;
+			head = temp;
+		}
+		head = curr;
+		curr->next = temp;
+	}
+	cout << "result: " << endl;
+	printLinkList();
+	return ;
+}

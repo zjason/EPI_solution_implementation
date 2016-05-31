@@ -170,3 +170,61 @@ int leetcode::removeElement(vector<int>& nums, int val)
 	return array_len;
 }
 
+void leetcode::moveZeroes(vector<int>& nums)
+{
+	int size = nums.size();
+	int index = 0;
+	while (index <= size) {
+		if (nums[index] == 0) {
+			nums.erase(nums.begin() + index);
+			nums.push_back(0);
+			size--;
+			index = 0;
+		}else{
+			index++;
+		}
+		
+	}
+
+	for (int i = 0; i < nums.size(); i++) {
+		cout << nums[i] << " ";
+	}
+}
+
+void leetcode::singleNumber(vector<int>& nums)
+{
+	int result = 0;
+	for (int i = 0; i < nums.size(); i++) {
+		result ^= nums[i];
+		cout << "result is " << result << endl;
+	}
+}
+
+// if n is power of two then it's binary only contain one '1'
+// we can use 'and' to compare, if n is not power of two then the 
+// result will not be zero, if n is power of two the result will be zero
+bool leetcode::isPowerOfTwo(int n)
+{
+	if (n <= 0) {
+		return false;
+	}
+	n = n & (n - 1);
+	return n == 0;
+}
+
+// edge case: 1
+// powere of four must be power of two which means it's binary contain only
+// one '1', and all power of four - 1 will divided by 3 with no reminder
+bool leetcode::isPowerOfFour(int num)
+{
+	if (num <= 0) {
+		return false;
+	}
+	if ((num & (num - 1)) == 0) {
+		if ((num - 1) % 3 == 0) {
+			return true;
+		}
+	}
+	return false;
+}
+

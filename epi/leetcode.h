@@ -1,4 +1,5 @@
 #pragma once
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -20,6 +21,13 @@ public:
 	int titleToNumber(string s);
 	int hammingWeight(uint32_t n);
 	int removeElement(vector<int>& nums, int val);
+	void moveZeroes(vector<int>& nums);
+	
+	// bit manipulation
+	void singleNumber(vector<int>& nums);
+	bool isPowerOfTwo(int n);
+	bool isPowerOfFour(int num);
+
 	
 };
 

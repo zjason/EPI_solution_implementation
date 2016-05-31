@@ -15,7 +15,7 @@ int main() {
 	test.bubbleSort(arr3);
 	test.shortBubbleSort(arr4);
 	//test.quickSort(arr);
-	
+*/
 	// test case for linked list
 	linkList list;
 	int i = 0;
@@ -23,6 +23,8 @@ int main() {
 		list.addNode(i);
 		i++;
 	}
+	list.reverseList();
+/*
 	list.addNodeAt(4, 20);
 	list.printLinkList();
 	list.deleteNode(5);
@@ -37,14 +39,19 @@ int main() {
 	list.printLinkList();
 */
 	// leetcode solution
-	/*leetcode leet;
-	vector<int> test1 = { 3,3 };
-	leet.addDigits(0);
+	//leetcode leet;
+	//vector<int> test1 = { 0, 0, 1 };
+	/*leet.addDigits(0);
 	vector<int> test2 = { 1,2 };
 	leet.rotate(test1, 4);
 	leet.convertToTitle(28);
 	leet.titleToNumber("aa");
 	leet.hammingWeight(1);
 	leet.removeElement(test2, 3);*/
+	//leet.moveZeroes(test1);
+	//vector<int> test3 = { 2, 3, 4, 5, 4,3,5,2,4};
+
+	//leet.singleNumber(test3);
+
 	return 0;
 }

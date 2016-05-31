@@ -29,6 +29,8 @@ public:
 	void removeDup();
 	bool hasCycle(node *head);
 	void oddEvenList(node* head);
-	
+	void swapPairs(node* head);
+	void addTwoNumbers(node* l1, node* l2);
+	void reverseList();
 };
 
